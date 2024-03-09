@@ -66,14 +66,15 @@
                     </Page>
 
 <!--Now for viewing the individual orders, we have create another page-->
-
+<!--When we add page and simple form the BAS does not render the page-->
+   
 
                 </detailPages>
 
                 <masterPages>
                     <Page
                         id="master"
-                        title="Order Master"
+                        title="All Orders List"
                     >
                         <!-- The List field here takes the id, item attribute from odata, and function (ItemPress)-->
                         <List

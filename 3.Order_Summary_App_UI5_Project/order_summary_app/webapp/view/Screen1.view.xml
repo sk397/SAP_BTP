@@ -1,7 +1,127 @@
-<mvc:View controllerName="ordersummaryapp.controller.Screen1"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
+<mvc:View
+    controllerName="ordersummaryapp.controller.Screen1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page id="page">
+        <!-- As we want the below title to be in center we will create a customer header -->
+        <customHeader>
+            <OverflowToolbar>
+                <content>
+                    <ToolbarSpacer />
+                    <Title text="Order Summary Apps" />
+                    <ToolbarSpacer />
+                </content>
+            </OverflowToolbar>
+        </customHeader>
+        <!-- The above code will make the toolbar text to center -->
+        <!-- Split container cotains detail and master pages-->
+        <!-- for the Splitcontainer we give the InitialMaster and InitialDetail Attributes-->
+        <content>
+            <SplitContainer
+                initialMaster="master"
+                initialDetial="orderDetail"
+            >
+                <detailPages>
+
+         <!-- Order detials for that particular selected order-->
+                    <Page
+                        id="orderDetail1"
+                        title="Order Details"
+                    >
+                        <Table
+                            id="orderTable"
+                            items="{/Order_Details}"
+                        >
+                            <columns>
+                                <Column>
+                                    <Text text="Order ID" />
+                                </Column>
+                                <Column>
+                                    <Text text="Product ID" />
+                                </Column>
+                                <Column>
+                                    <Text text="Unit Price" />
+                                </Column>
+                                <Column>
+                                    <Text text="Quantity" />
+                                </Column>
+                                <Column>
+                                    <Text text="Discount" />
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem type="Navigation">
+                                    <cells>
+                                        <Text text="{OrderID}" />
+                                        <Text text="{ProductID}" />
+                                        <Text text="{UnitPrice}" />
+                                        <Text text="{Quantity}" />
+                                        <Text text="{Discount}" />
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </Page>
+
+<!--Now for viewing the individual orders, we have create another page-->
+
+
+                </detailPages>
+
+                <masterPages>
+                    <Page
+                        id="master"
+                        title="Order Master"
+                    >
+                        <!-- The List field here takes the id, item attribute from odata, and function (ItemPress)-->
+                        <List
+                            id="OrderList"
+                            items="{/Orders}"
+                            itemPress="onListPress"
+                        >
+                            <items>
+                                <StandardListItem title="{OrderID}" type="Navigation" />
+                            </items>
+                        </List>
+                    </Page>
+                </masterPages>
+            </SplitContainer>
+        </content>
+        <!-- Above code will give us the order list in the App in the left side-->
     </Page>
 </mvc:View>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

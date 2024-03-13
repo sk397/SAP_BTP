@@ -83,23 +83,30 @@
           "target": [
             "TargetS1"
           ]
+        },
+        {
+          "name": "RouteS2",
+          "pattern": ":?query:",
+          "target": [
+            "TargetS2"
+          ]
         }
       ],
       "targets": {
         "TargetS1": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
           "viewId": "S1",
           "viewName": "Approve"
+        },
+        "TargetS2": {
+          "viewId": "S2",
+          "viewName": "Create"
         }
       }
     },
     "rootView": {
       "viewName": "project1.view.App",
       "type": "XML",
-      "async": true,
-      "id": "App"
+      "async": true
     }
   }
 }

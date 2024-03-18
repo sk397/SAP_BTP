@@ -1,0 +1,15 @@
+<!-- For XML we have to use the Model view controller-->
+<!--Model: Stored the data, View: Shwows the data, Controller: Mannipulates the data-->
+<!--XMLns is the namespace for the library and dependencies-->
+<!--We also import our controller file here-->
+<!--After dependencies, we add the UI item, here it is button-->
+
+<mvc:XMLView 
+controllerName="ui5.product.list.controller.App"
+displayBlock="true"
+xmlns="sap.m"
+xmlns:mvc="sap.ui.core.mvc" >
+
+<Button text="MVC Controller View Button" press="onPressCreateNewProduct" />
+
+</mvc:XMLView>

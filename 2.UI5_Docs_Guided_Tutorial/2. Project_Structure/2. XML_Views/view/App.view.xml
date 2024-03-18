@@ -1,0 +1,13 @@
+<!-- For XML we have to use the Model view controller-->
+<!--Model: Stored the data, View: Shwows the data, Controller: Mannipulates the data-->
+<!--XMLns is the namespace for the library and dependencies-->
+<!--After dependencies, we add the UI item, here it is button-->
+
+<mvc:XMLView 
+displayBlock="true"
+xmlns="sap.m"
+xmlns:mvc="sap.ui.core.mvc" >
+
+<Button text="MNC View Button" />
+
+</mvc:XMLView>

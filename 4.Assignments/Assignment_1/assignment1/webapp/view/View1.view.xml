@@ -1,7 +1,7 @@
 <mvc:View controllerName="assignment1.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-
+   
    <App>
    <pages>
 
@@ -21,11 +21,12 @@
 							<Input placeholder="Password"></Input>
 							<Label class="label" text="Confirm Password"></Label>
 							<Input placeholder="Confirm Password"></Input>
-							<Button id="btn" text="SignUp"></Button>
+							<Button  id="btn" text="{i18n>ButtonText}"></Button>
 						</items>
 					</VBox>
 				</content>
 			</Page>
+
 
    </pages>
    </App>

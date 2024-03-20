@@ -1,5 +1,31 @@
 /* Enter your custom styles here */
 
-HeaderTitle {
-    text-align: center;
-    }
+
+
+.vbox{
+	background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.label{
+	color:black;
+	font-size:15px;
+}
+
+#__page0-intHeader-BarPH{
+    background-color: cornsilk;
+    justify-content: center;
+}
+
+
+#container-assignment1---View1--btn-inner{
+    background-color: azure;
+    font-size: 20px
+}
+
+#__xmlview0--btn-inner{
+	background-color:blue;
+	color: white;
+    
+}
+
+

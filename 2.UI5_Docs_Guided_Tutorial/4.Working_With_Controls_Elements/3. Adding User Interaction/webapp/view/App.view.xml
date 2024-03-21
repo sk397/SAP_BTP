@@ -6,12 +6,7 @@
   <Shell>
     <App class="myProductsList">
       <Page class="sapUiResponsiveContentPadding" title="{i18n>appTitle}">
-          <Input
-            id="idProductName"
-            class="sapUiTinyMarginEnd"
-            placeholder="{i18n>productName}"
-            width="20rem"
-            maxLength="40" />
+          <Input id="idProductName" class="sapUiTinyMarginEnd" placeholder="{i18n>productName}" width="20rem" maxLength="40" />
           <Button text="{i18n>buttonTextCreate}" press="onPressCreateNewProduct" />
           <List
             id="idProductList"
@@ -24,6 +19,7 @@
               <StandardListItem title="Product 1" />
               <StandardListItem title="Product 2" />
               <StandardListItem title="Product 3" />
+              <StandardListItem title="Product 4" />
             </items>
           </List>
       </Page>

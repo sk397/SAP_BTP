@@ -11,7 +11,6 @@ sap.ui.define([
 
       // Add a new item to the list
       this.getView().byId("idProductList").addItem(new StandardListItem({
-        title: sProductName
       }))
     },
 
@@ -23,3 +22,5 @@ sap.ui.define([
     }
   })
 })
+
+// Ask instrcutor why SProductName can be directly used with add list item code

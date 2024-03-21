@@ -1,0 +1,37 @@
+<mvc:View controllerName="assignment1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+   
+   <App>
+   <pages>
+
+<Page title="{i18n>title}">
+				<content>
+					<VBox class="vbox" justifyContent="Center" alignContent="Center" alignItems="Center" fitContainer="true">
+						<items>
+							<Label class="label" text="First Name"></Label>
+							<Input placeholder="First Name"></Input>
+							<Label class="label" text="Last Name"></Label>
+							<Input placeholder="Last Name"></Input>
+							<Label class="label" text="Mail Id"></Label>
+							<Input placeholder="Mail ID"></Input>
+							<Label class="label" text="Mobile No"></Label>
+							<Input placeholder="Mobile No"></Input>
+							<Label class="label" text="Password"></Label>
+							<Input placeholder="Password"></Input>
+							<Label class="label" text="Confirm Password"></Label>
+							<Input placeholder="Confirm Password"></Input>
+							<Button  id="btn" text="{i18n>ButtonText}"></Button>
+						</items>
+					</VBox>
+				</content>
+			</Page>
+
+
+   </pages>
+   </App>
+
+    
+
+
+</mvc:View>

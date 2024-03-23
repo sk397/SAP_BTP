@@ -1,0 +1,29 @@
+<mvc:View controllerName="productcatalogwebpage.controller.S1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    
+    
+    <Page id="page" title="{i18n>title}" titleAlignment="Center"  backgroundDesign="Standard">
+    
+
+    <content>
+    <Input id="input1" placeholder="New Product" width="20rem" maxLength="40" class="sapUiTinyMarginEnd"/>
+    <Button id="Sumbit" text="{i18n>button}" />
+
+<!--delete is an event in the List and it is a del function-->
+    <List id="List1"
+     headerText="This is a list"
+     noDataText="No Data Avialable"
+     delete="OnPressDelete" 
+    >
+
+    
+    <items>
+    </items>
+
+    </List>
+    </content>
+    </Page>
+
+
+</mvc:View>

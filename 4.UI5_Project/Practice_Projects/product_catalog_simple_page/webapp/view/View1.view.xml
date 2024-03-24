@@ -2,6 +2,7 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m"
     xmlns:core="sap/ui/core"
+    
     >
 
 
@@ -11,7 +12,11 @@
 
 
     <VBox  alignItems="Center">
-    <Input id="UserProductEntry" placeholder="{i18n>Input}"></Input>
+
+    <Input id="UserProductEntry" placeholder="{i18n>Input}" type="Text"></Input>
+
+    <Input id="UserEnteredPrice" placeholder="Enter Price" type="Number"></Input>
+
     <ComboBox id="CategoryID" placeholder="{i18n>Category}">
     <core2:Item key="0" text=""/>
     <core2:Item key="1" text="Electronics"/>
@@ -30,13 +35,13 @@
     <List id="ProductList" headerText="Product Name" noDataText="No Data Available" footerText="Have a Good Day :)" mode="Delete" delete="OnDelete" >
 
     <ObjectListItem title="Macbook Air" number="100" numberUnit="USD"> 
-    <firstStatus> <ObjectStatus text="Available" state="Success"/> </firstStatus>
-    <attributes> <ObjectAttribute title="Release Date" text="03/14/21"/>  <ObjectAttribute title="Discontinued Date" text="03/14/23"/>  </attributes>
+    <firstStatus> <ObjectStatus text="Available" state="Success"/> </firstStatus> <!--Staus of the item - Available, Out of stock, etc-->
+    <attributes> <ObjectAttribute title="Category" text="Electronics"/>  <ObjectAttribute title="Release Date" text="03/14/21"/> <ObjectAttribute title="Discontinued Date" text="03/14/23"/>   </attributes>
     </ObjectListItem>
 
     <ObjectListItem title="Macbook Pro" number="200" numberUnit="USD"> 
     <firstStatus> <ObjectStatus text="Not Avialable" state="Error"/> </firstStatus>
-    <attributes> <ObjectAttribute title="Release Date" text="03/14/22"/>  <ObjectAttribute title="Discontinued Date" text="03/14/24"/>  </attributes>
+    <attributes> <ObjectAttribute title="Category" text="Electronics"/>  <ObjectAttribute title="Release Date" text="03/14/22"/>  <ObjectAttribute title="Discontinued Date" text="03/14/24"/> </attributes>
     </ObjectListItem>
 
 

@@ -1,0 +1,53 @@
+<mvc:View xmlns:core2="sap.ui.core" controllerName="productcatalogsimplepage.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap/ui/core"
+    >
+
+
+
+
+    <Page id="page" title="{i18n>title}" backgroundDesign="Solid" enableScrolling="true" showFooter="true" floatingFooter="true">
+
+
+    <VBox  alignItems="Center">
+    <Input id="UserProductEntry" placeholder="{i18n>Input}"></Input>
+    <ComboBox id="CategoryID" placeholder="{i18n>Category}">
+    <core2:Item key="0" text=""/>
+    <core2:Item key="1" text="Electronics"/>
+    <core2:Item key="2" text="Grocery"/>
+    <core2:Item key="3" text="Beverages"/>
+    </ComboBox>
+
+    <DatePicker placeholder="{i18n>Release}"></DatePicker>
+    <DatePicker placeholder="{i18n>Discontinued}"></DatePicker>
+    <Button id="CreateNewProducts" text="Submit" width="10rem" ></Button>
+
+    </VBox>
+
+    <List headerText="Product Name" noDataText="No Data Available" footerText="Have a Good Day :)" mode="Delete" delete="OnDelete">
+
+    <ObjectListItem title="Macbook Air" number="100" numberUnit="USD"> 
+    <firstStatus> <ObjectStatus text="Available" state="Success"/> </firstStatus>
+    <attributes> <ObjectAttribute title="Release Date" text="03/14/21"/>  <ObjectAttribute title="Discontinued Date" text="03/14/23"/>  </attributes>
+    </ObjectListItem>
+
+    <ObjectListItem title="Macbook Pro" number="200" numberUnit="USD"> 
+    <firstStatus> <ObjectStatus text="Not Avialable" state="Error"/> </firstStatus>
+    <attributes> <ObjectAttribute title="Release Date" text="03/14/22"/>  <ObjectAttribute title="Discontinued Date" text="03/14/24"/>  </attributes>
+    </ObjectListItem>
+
+    </List>
+     
+     <footer>
+         <OverflowToolbar >
+         	<ToolbarSpacer/>
+            <Button text="Sai Hari Practice UI5" width="30rem" type="Accept" ></Button>
+			<ToolbarSpacer/>
+         </OverflowToolbar>    
+     </footer>
+
+
+
+    </Page>
+</mvc:View>

@@ -19,13 +19,15 @@
     <core2:Item key="3" text="Beverages"/>
     </ComboBox>
 
-    <DatePicker placeholder="{i18n>Release}"></DatePicker>
-    <DatePicker placeholder="{i18n>Discontinued}"></DatePicker>
-    <Button id="CreateNewProducts" text="Submit" width="10rem" ></Button>
+    <DatePicker id="RelDate" placeholder="{i18n>Release}"></DatePicker>
+    <DatePicker id="DisDate" placeholder="{i18n>Discontinued}"></DatePicker>
+
+    <Button id="CreateNewProducts" text="Submit" width="10rem" press="OnPressCreateNewProduct"></Button>
 
     </VBox>
 
-    <List headerText="Product Name" noDataText="No Data Available" footerText="Have a Good Day :)" mode="Delete" delete="OnDelete">
+
+    <List id="ProductList" headerText="Product Name" noDataText="No Data Available" footerText="Have a Good Day :)" mode="Delete" delete="OnDelete" >
 
     <ObjectListItem title="Macbook Air" number="100" numberUnit="USD"> 
     <firstStatus> <ObjectStatus text="Available" state="Success"/> </firstStatus>
@@ -37,7 +39,10 @@
     <attributes> <ObjectAttribute title="Release Date" text="03/14/22"/>  <ObjectAttribute title="Discontinued Date" text="03/14/24"/>  </attributes>
     </ObjectListItem>
 
+
+
     </List>
+
      
      <footer>
          <OverflowToolbar >
